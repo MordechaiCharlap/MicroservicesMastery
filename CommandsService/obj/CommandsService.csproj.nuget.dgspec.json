@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\commandsservice\\CommandsService.csproj": {}
+    "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\CommandsService\\CommandsService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\commandsservice\\CommandsService.csproj": {
+    "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\CommandsService\\CommandsService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\commandsservice\\CommandsService.csproj",
+        "projectUniqueName": "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\CommandsService\\CommandsService.csproj",
         "projectName": "CommandsService",
-        "projectPath": "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\commandsservice\\CommandsService.csproj",
+        "projectPath": "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\CommandsService\\CommandsService.csproj",
         "packagesPath": "C:\\Users\\morde\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\commandsservice\\obj\\",
+        "outputPath": "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\CommandsService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\morde\\AppData\\Roaming\\NuGet\\NuGet.Config",
