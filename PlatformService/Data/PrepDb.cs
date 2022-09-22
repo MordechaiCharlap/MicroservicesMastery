@@ -16,6 +16,7 @@ namespace PlatformService.Data
             {
                 Console.WriteLine("-->Creating Mock data...");
 
+
                 Platform p1 = new Platform() { Id = 1, Name = "Test 1", Publisher = "Microsoft", Cost = "A lot" };
                 Platform p2 = new Platform() { Id = 2, Name = "Test 2", Publisher = "Java", Cost = "A lot" };
                 Platform p3 = new Platform() { Id = 3, Name = "Test 3", Publisher = "Kubernitis", Cost = "A lot" };
