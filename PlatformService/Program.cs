@@ -12,7 +12,22 @@ builder.Services.AddSwaggerGen();
 
 Console.WriteLine($"--> CommandsService endpoint: {builder.Configuration["CommandsService"]}");
 
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMemDb"));
+if (builder.Environment.IsProduction())
+{
+    Console.WriteLine("--> Using SqlServer");
+
+    var connString = builder.Configuration.GetConnectionString("PlatformConn");
+    connString += $"Password={builder.Configuration["saPassword"]}";
+
+    builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connString));
+}
+else
+{
+    Console.WriteLine("--> Using InMem Db");
+    builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMemDb"));
+}
+
+
 
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
