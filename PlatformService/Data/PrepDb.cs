@@ -40,6 +40,7 @@ namespace PlatformService.Data
             {
                 Console.WriteLine("-->We already have data");
             }
+
         }
     }
 }
