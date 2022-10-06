@@ -59,11 +59,7 @@ namespace CommandsService.Data
             .Where(c => c.Id == commandId && c.PlatformId == platformId)
             .FirstOrDefault();
 
-            if (command != null) return command;
-            else
-            {
-                throw new ArgumentException("PlatformId or commandId or both are incorrect");
-            }
+            return command;
         }
 
         public IEnumerable<Command> GetCommandsForPlatform(int platformId)
