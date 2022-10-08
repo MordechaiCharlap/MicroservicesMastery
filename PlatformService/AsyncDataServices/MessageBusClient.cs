@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+using System.Text;
+using System.Runtime.Serialization.Json;
+using System.Text.Json;
 using PlatformService.Dtos;
 using RabbitMQ.Client;
 
@@ -37,7 +41,37 @@ namespace PlatformService.AsyncDataServices
         }
         public void PublishNewPlatform(PlatformPublishedDto platformPublishedDto)
         {
-            throw new NotImplementedException();
+            var message = JsonSerializer.Serialize(platformPublishedDto);
+
+            if (_connection.IsOpen)
+            {
+                Console.WriteLine("--> RabbitMQ Connection Open, sending message...");
+                SendMessage(message);
+            }
+            else
+            {
+                Console.WriteLine("--> RabbitMQ Connection is closed, not sending");
+            }
+        }
+        private void SendMessage(string message)
+        {
+            var body = Encoding.UTF8.GetBytes(message);
+
+            _channel.BasicPublish(exchange: "trigger",
+                                routingKey: "",
+                                basicProperties: null,
+                                body: body);
+            Console.WriteLine($"--> We sent the message: {message}");
+        }
+        public void Dispose()
+        {
+            Console.WriteLine($"MessageBus Disposed");
+
+            if (_channel.IsOpen)
+            {
+                _channel.Close();
+                _connection.Close();
+            }
         }
         //Triggered when connection is shutting down
         public void RabbitMQ_ConnectionShutdown(object sender, ShutdownEventArgs e)
