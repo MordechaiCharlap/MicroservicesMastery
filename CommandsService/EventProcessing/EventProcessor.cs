@@ -69,7 +69,7 @@ namespace CommandsService.EventProcessing
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"--> Could not add platform to CommandService DB");
+                    Console.WriteLine($"--> Could not add platform to CommandService DB: {ex}");
                 }
             }
         }
