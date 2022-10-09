@@ -22,6 +22,7 @@ namespace CommandsService.AsyncDataServices
             InitializeRabbitMQ();
         }
 
+        //Declare a long running time connection and listenning to it
         private void InitializeRabbitMQ()
         {
             var factory = new ConnectionFactory()
