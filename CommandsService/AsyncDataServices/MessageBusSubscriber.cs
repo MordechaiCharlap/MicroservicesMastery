@@ -27,7 +27,7 @@ namespace CommandsService.AsyncDataServices
             var factory = new ConnectionFactory()
             {
                 HostName = _configuration["RabbitMQHost"],
-                Port = int.Parse(_configuration["RabbitMQ"])
+                Port = int.Parse(_configuration["RabbitMQPort"])
             };
 
             _connection = factory.CreateConnection();
