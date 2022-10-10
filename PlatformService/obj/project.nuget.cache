@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WKtlGNXR9QhbNAf+x3YEhFNJk5Cd/FYfKjvTkR/X37U5Ow4uk0BbgVM3DP2iw9BIeOIdIlUTXKDeijS+N8I0Qg==",
+  "dgSpecHash": "XD7oiOg2JdNSMPEW+/4jU2ixwbiLE0vC8iJbEdUx8pFJzi/Fb0Or1R5eHSWkieVWAv8dBRb+hxt5G5mD9phTVA==",
   "success": true,
   "projectFilePath": "C:\\Users\\morde\\source\\repos\\MicroservicesMastery\\PlatformService\\PlatformService.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,7 @@
     "C:\\Users\\morde\\.nuget\\packages\\grpc.net.client\\2.49.0\\grpc.net.client.2.49.0.nupkg.sha512",
     "C:\\Users\\morde\\.nuget\\packages\\grpc.net.clientfactory\\2.49.0\\grpc.net.clientfactory.2.49.0.nupkg.sha512",
     "C:\\Users\\morde\\.nuget\\packages\\grpc.net.common\\2.49.0\\grpc.net.common.2.49.0.nupkg.sha512",
-    "C:\\Users\\morde\\.nuget\\packages\\grpc.tools\\2.49.1\\grpc.tools.2.49.1.nupkg.sha512",
+    "C:\\Users\\morde\\.nuget\\packages\\grpc.tools\\2.49.0\\grpc.tools.2.49.0.nupkg.sha512",
     "C:\\Users\\morde\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\morde\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\morde\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
