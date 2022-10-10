@@ -2,6 +2,7 @@ using CommandsService.AsyncDataServices;
 using CommandsService.Data;
 using CommandsService.EventProcessing;
 using CommandsService.SyncDataServices.Grpc;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,7 +33,13 @@ if (app.Environment.IsDevelopment())
 //app.UseHttpsRedirection();
 
 app.UseRouting();
+
 app.UseAuthorization();
-app.MapControllers();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+
+PrepDb.PrepPopulation(app);
 
 app.Run();

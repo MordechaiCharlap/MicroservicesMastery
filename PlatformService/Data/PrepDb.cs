@@ -29,9 +29,9 @@ namespace PlatformService.Data
             if (!context.Platforms.Any())
             {
                 Console.WriteLine("-->Creating Mock data...");
-                Platform p1 = new Platform() { Name = "Test 1", Publisher = "Microsoft", Cost = "A lot" };
-                Platform p2 = new Platform() { Name = "Test 2", Publisher = "Java", Cost = "A lot" };
-                Platform p3 = new Platform() { Name = "Test 3", Publisher = "Kubernitis", Cost = "A lot" };
+                Platform p1 = new Platform() { Name = "Visual Studio Code", Publisher = "Microsoft", Cost = "Free" };
+                Platform p2 = new Platform() { Name = "SQL Server Management Studio", Publisher = "Microsoft", Cost = "Free" };
+                Platform p3 = new Platform() { Name = "Kubernetes", Publisher = "Google", Cost = "Free" };
 
                 context.Platforms.AddRange(p1, p2, p3);
                 context.SaveChanges();
